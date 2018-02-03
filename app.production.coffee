@@ -10,8 +10,8 @@ module.exports =
   ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
-    js_pipeline(files: 'assets/js/*.coffee', out: 'js/build.js', minify: true, hash: true),
-    css_pipeline(files: 'assets/css/*.styl', out: 'css/build.css', minify: true, hash: true),
+    js_pipeline(files: 'assets/js/*.coffee', out: 'js/build.js', minify: true),
+    css_pipeline(files: 'assets/css/*.styl', out: 'css/build.css', minify: true),
     contentful(
       access_token: '6b8efe5567aabba6cda6af5fd76bda3fbf43707213ed96d6e0f757466f1925b4',
       space_id: '4ljlz98td630'
