@@ -1,0 +1,11 @@
+extends _layout
+
+block content
+  .game
+    each post in contentful.blogPosts
+      if post.game == 'League of Legends'
+        .article
+          h1=post.title
+          span Publish Date: #{new Date(post.publishDate).toDateString()}
+          !=markdown(post.trainingSummary)
+          a(href=post._url) Read More

@@ -1,0 +1,8 @@
+extends _layout
+
+block content
+    .post
+      h1=entry.title
+      img(src!=asset(entry.headerImage))
+      span Publish Date: #{new Date(entry.publishDate).toDateString()}
+      !=markdown(entry.trainingSummary)
