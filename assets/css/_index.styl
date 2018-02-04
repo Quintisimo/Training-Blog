@@ -23,8 +23,18 @@ header
     a
       cursor pointer
       margin 1rem
+      text-decoration none
 
-      img
+      img, #post
         size(25rem 12.5rem)
         transition()
         hover-pop(1.1)
+
+      #post
+        display flex
+        justify-content center
+        align-items center
+        background darken($orange, 10%)
+
+        p
+          font-size 4rem
