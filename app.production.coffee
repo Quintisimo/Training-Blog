@@ -7,7 +7,7 @@ contentful   = require 'roots-contentful'
 marked       = require 'marked'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', 'views/_*', '.gitignore', 'ship.*conf']
+  ignores: ['readme.md', 'assets/css/_*', 'views/_*', '.gitignore', 'ship.*conf']
 
   extensions: [
     js_pipeline(files: 'assets/js/*.coffee', out: 'js/build.js', minify: true),
