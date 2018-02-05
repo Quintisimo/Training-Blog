@@ -1,9 +1,14 @@
+
+netlifyIdentity.on('login', ->
+  location.href = 'blog.html'
+  return
+)
+
+
 # jQuery
 (($) ->
 
-  $(document).ready ->
-
-    
+  $(document).ready ->    
 
     return
   return

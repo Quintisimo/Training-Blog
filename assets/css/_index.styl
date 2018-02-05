@@ -1,40 +1,15 @@
-header
-  size(100%)
+.login
+  height inherit
   display flex
+  flex-direction column
   justify-content center
   align-items center
-  flex-wrap wrap
 
-  .heading
-    h1
-      text-align center
-      margin-top 10px
+  img
+    size(300px 150px)
 
-    p
-      text-align center
-      font-size 1.5rem
+  p
+    padding 10px 0
 
-  .games
-    display flex
-    justify-content space-around
-    align-items center
-    flex-wrap wrap
-
-    a
-      cursor pointer
-      margin 1rem
-      text-decoration none
-
-      img, #post
-        size(25rem 12.5rem)
-        transition()
-        hover-pop(1.1)
-
-      #post
-        display flex
-        justify-content center
-        align-items center
-        background darken($orange, 10%)
-
-        p
-          font-size 4rem
+  .netlify-identity-button
+    button()
