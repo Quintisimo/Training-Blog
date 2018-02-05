@@ -1,2 +1,2 @@
 /blog/* 200! Role=member
-/blog/* / 
+/blog/ /index.html 
